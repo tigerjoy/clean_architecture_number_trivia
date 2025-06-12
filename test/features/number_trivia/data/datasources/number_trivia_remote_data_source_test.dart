@@ -51,7 +51,7 @@ void main() {
         // assert
         verify(
           mockHttpClient.get(
-            Uri.parse('$concreteTriviaBaseURL/$tNumber'),
+            Uri.parse('$CONCRETE_TRIVIA_BASE_URL/$tNumber'),
             headers: {'Content-Type': 'application/json'},
           ),
         );
@@ -70,7 +70,7 @@ void main() {
         // assert
         verify(
           mockHttpClient.get(
-            Uri.parse('$concreteTriviaBaseURL/$tNumber'),
+            Uri.parse('$CONCRETE_TRIVIA_BASE_URL/$tNumber'),
             headers: {'Content-Type': 'application/json'},
           ),
         );
@@ -109,7 +109,7 @@ void main() {
           // assert
           verify(
             mockHttpClient.get(
-              Uri.parse(randomTriviaBaseURL),
+              Uri.parse(RANDOM_TRIVIA_BASE_URL),
               headers: {'Content-Type': 'application/json'},
             ),
           );

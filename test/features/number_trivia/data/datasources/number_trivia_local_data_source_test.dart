@@ -38,7 +38,7 @@ void main() {
       final result = await dataSource.getLastNumberTrivia();
 
       // assert
-      verify(mockSharedPreferences.getString(cachedNumberTriviaLocalKey));
+      verify(mockSharedPreferences.getString(CACHED_NUMBER_TRIVIA_LOCAL_KEY));
       expect(result, equals(tNumberTriviaModel));
     });
 
@@ -73,7 +73,7 @@ void main() {
       final expectedJsonString = json.encode(tNumberTriviaModel);
       verify(
         mockSharedPreferences.setString(
-          cachedNumberTriviaLocalKey,
+          CACHED_NUMBER_TRIVIA_LOCAL_KEY,
           expectedJsonString,
         ),
       );
